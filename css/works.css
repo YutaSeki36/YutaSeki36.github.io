@@ -1,0 +1,145 @@
+main{
+  margin: -180px 0 100px 0;
+  font-family: 'Code-Light', "Hiragino Sans";
+}
+.description__tech a:hover{
+  text-decoration: underline;
+}
+.title{
+  margin-bottom: 40px;
+  font-family: 'Code-Light', "Hiragino Sans";
+}
+.title h2{
+  font-size: 4vw;
+  margin-bottom: 20px;
+}
+.title p{
+  font-size:3vw;
+}
+.wrapper{
+width: 80vw;
+margin: auto;
+}
+.heroimg{
+  text-align: center;
+}
+.heroimg img{
+  width: 40%;
+  margin-right: 30px;
+}
+.description{
+  font-size: 1.5vw;
+  margin: 40px 0 40px 0;
+  line-height: 180%;
+  font-family: "Hiragino Sans";
+}
+.description__title{
+  height: auto;
+  width: auto;
+  font-size: 2.5vw;
+  margin-bottom: 1.4vmin;
+  border-bottom: 1px solid;
+}
+.description__img{
+text-align: center;
+margin-bottom: 3vmin;
+}
+.description__img p{
+  font-size: 5vmin;
+  margin: 4vmin;
+}
+.description__img img{
+  width: 90%;
+}
+.motenate img{
+  width: 30%;
+}
+.motenate_ img{
+  width: 50%;
+}
+.description__work{
+  margin-bottom: 30px;
+}
+.description__background{
+  margin-bottom: 20px;
+}
+.description__tech{
+  margin-bottom:20px;
+}
+@media screen and (max-width: 700px) {
+	.section__title {
+    font-size: 10vmin;
+    margin-top: 8vmin;
+    margin-bottom: 40vmin;
+}
+.works__list {
+  position: relative;
+  float: left;
+  width: 90%;
+  height: 25vmin;
+  margin: 1rem 1rem;
+  border: 1px solid #FFFFFF;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+  }
+.title p {
+font-size: 8vw;
+}
+.motenate img{
+  width: 100%;
+}
+.motenate_ img{
+  width:100%;
+}
+.description__title{
+  font-size: 4vw;
+}
+.description {
+    font-size: 4vw;
+    margin: 40px 0 40px 0;
+    line-height: 180%;
+    font-family: "Hiragino Sans";
+}
+.description__img img{
+  width: 100%;
+}
+.heroimg img {
+    width: 90%;
+    margin-right: 0px;
+}
+}
+@media screen and (max-width: 330px){
+  .works__list {
+    position: relative;
+    float: left;
+    width: 37%;
+    height: 25vmin;
+    margin: 1rem 1rem;
+    border: 1px solid #FFFFFF;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    }
+		.section__title {
+		    font-size: 10vmin;
+		    margin-top: 8vmin;
+		    margin-bottom: 50vmin;
+		}
+    .title p {
+    font-size: 8vw;
+ }
+ .description {
+    font-size: 5vw;
+    margin: 40px 0 40px 0;
+    line-height: 180%;
+    font-family: "Hiragino Sans";
+}
+.description__img img{
+  width: 90%;
+}
+.heroimg img {
+    width: 90%;
+    margin-right: 0px;
+}
+}

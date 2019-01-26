@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../test.css">
+    <link rel="stylesheet" type="text/css" href="../css/hover.css">
+    <link rel="stylesheet" type="text/css" href="../css/works.css">
+
+    <title>Wordrop</title>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="section__inner">
+      <div class="section__title">
+        <p>WORKS</p>
+        <img class="section__logo anima" src="../images/circle_logo.svg" alt="">
+      </div>
+    </div>
+    <main>
+      <div class="wrapper">
+        <div class="title">
+          <h2>あなたの「気になる」を逃さない。</h2>
+          <p>wordrop</p>
+        </div>
+        <div class="heroimg"><img src="../images/gallery.jpg" alt="" class="heroimg_detail">
+        <img src="../images/wordrop_.jpg" alt="" class="heroimg_detail"></div>
+        <div class="description">
+          <div class="description__img">
+            <p>このアプリでこんな問題を解決できます</p>
+            <img src="../images/wordrop__.png" alt="">
+          </div>
+          <p class="description__title">読書中に気になったwordを、あなたの代わりに調べてくれる</p>
+          <p class="description__work">
+            機能:1.指につけてあるデバイスで気になる文字の付近をなぞる。 2.なぞった部分を画像として保存、その画像から文字情報のみを抜き出す。それを形態素解析し、その中から固有表現を抽出する。抽出された文字を解析し、データベースへ保存する。 3.データベース上に表示された文字の大きさと色にはそれぞれ意味を持っている。先程の、文字解析でそれらを行っている。自分がなぞったワードに対して、もし他ユーザーも同じワードをなぞっていた場合、今までの他のユーザー達がなぞった回数の頻度により、重要性の高低を判断し、文字の大きさを変更して表示されるようにしている。また、なぞったワードに対し、元々用意してある、「人」、「場所」、「人工物」、「それ以外」かの要素に当てはめ、当てはまった要素の色に変更して表示されるようにしている。 4.表示されている文字をクリックすると、その文字に関する情報をWikipediaAPIを利用して、知ることができる。また、文字の要素が「場所」だった場合は、Wikipedia情報の下に、googleマップを付けている。 5.一度調べたワードはアーカイブのようにリスト化される。
+          </p>
+          <p class="description__title">気になる、でも読書の邪魔をしたくないという思い</p>
+          <p class="description__background">
+            背景:みなさんはこんな経験をしたことがありませんか？ 本や雑誌を読んでいるときに、気になるワードが出てきたが、後々調べようと思ったまま調べるのを忘れてしまっていたという経験です。このような問題を解決すべく、直感的に気になる情報を抜き出し、後から見るためにまとめて貯蔵しておくことが可能なデバイスがあるならば、自然な読書を邪魔することなく、好きな時に好きなだけ調べることが可能なのではと考えました。<br>
+            このアプリは、国内最大級ハッカソンイベントJPHACKS2016で開発を行い、野村證券賞を獲得いたしました。<br>
+            ここでの私の役割として、アプリの設計やUI設計、サーバーサイドの実装などを行いました。技術的なところで言えば画像から文字を抽出し、その文字を形態素解析を行い、文字データをデバイスからデータベースに保存するということと、web側で読み取った文字データの情報を表示することです。
+          </p>
+          <p class="description__tech">
+            使用言語、環境:PHP,Python,MySQL,HTML,CSS<br>
+            URL: <a href="https://devpost.com/software/wordrop">https://devpost.com/software/wordrop</a><br>
+            <a href="https://2016.jphacks.com/result/result_tag/prize">https://2016.jphacks.com/result/result_tag/prize</a>
+          </p>
+        </div>
+        <a href="../works_more.html">
+          <div class="works__detail change-border01">
+            <p class="change-border01__inner">BACK</p>
+          </div>
+        </a>
+      </div>
+    </main>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>

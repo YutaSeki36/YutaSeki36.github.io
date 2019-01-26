@@ -1,0 +1,61 @@
+
+.button {
+  border: 1px solid #eee;
+  padding: 10px 40px;
+  position: relative;
+}
+/* Effect1
+ *************************************** */
+/* 擬似要素の共通スタイル */
+.change-border01::after,
+.change-border01::before,
+.change-border01__inner::after,
+.change-border01__inner::before {
+  background-color: #bcbcbc;
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 10;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+}
+/* 左上へ配置 */
+.change-border01::after {
+    height: 1px;
+    left: -1px;
+    top: -1px;
+    width: 0px;
+}
+/* 右下へ配置 */
+.change-border01::before {
+  bottom: -1px;
+  height: 1px;
+  right: -1px;
+  width: 0px;
+}
+/* 左下へ配置 */
+.change-border01__inner::after {
+  bottom: -1px;
+  height: 0px;
+  left: -1px;
+  width: 1px;
+}
+/* 右下へ配置 */
+.change-border01__inner::before {
+  height: 0px;
+  right: -1px;
+  top: -1px;
+  width: 1px;
+}
+
+/* hover */
+.change-border01:hover::after,
+.change-border01:hover::before {
+  width: 100%;
+  width: calc(100% + 1px);
+}
+.change-border01:hover .change-border01__inner::after,
+.change-border01:hover .change-border01__inner::before {
+  height: 100%;
+  height: calc(100% + 1px);
+}

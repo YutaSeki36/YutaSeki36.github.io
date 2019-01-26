@@ -1,0 +1,294 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+text-decoration: none;
+}
+
+a:link { color:#000000; text-decoration:none }
+a:visited { color:#000000; text-decoration:none }
+a:hover { color:#000000; text-decoration:none }
+a:active { color:#000000; text-decoration:none }
+
+/* ここまでリセットcss */
+
+@font-face {
+font-family: 'Code-Light';
+src: url('../Code-Light/CODE_Light.eot') format('embedded-opentype'),
+url('../Code-Light/CODE_Light.woff') format('woff'),
+url('../Code-Light/CODE_Light.tff') format('truetype');
+}
+@font-face {
+  font-family: "Hiragino Sans";
+  src: local(HiraginoSans-W0);
+  font-weight: 100;
+}
+body {
+  font-family: 'Code-Light', "Hiragino Sans";
+  font-weight: 100;
+  background-image: url("../images/background1.png");
+}
+
+header{
+  height: 800px;
+}
+.background__img{
+  position: absolute;
+  top:0;
+  width: 100%;
+  height:800px;
+  background-image: url("../images/Myphoto.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.logobox{
+  background-color: #000000;
+  position: relative;
+  width: 450px;
+  top:170px;
+  left:70px;
+  padding: 15px 10px 0 10px;
+  font-size: 90px;
+  opacity: 0.6;
+  color: #FFFFFF;
+}
+
+.title__logo{
+  display: none;
+  position: relative;
+  top:150px;
+  left:100px;
+}
+.menu{
+  display: block;
+  width:800px;
+  margin-left: auto;
+  text-align: right;
+  overflow: hidden;
+}
+.menu__list{
+  position: fixed;
+  display: block;
+  top:20px;
+  font-size: 35px;
+}
+.menu__list:nth-child(1){
+	right:470px;
+}
+.menu__list:nth-child(2){
+	right:240px;
+}
+.menu__list:nth-child(3){
+	right:40px;
+}
+.intro__paragraph{
+  display: block;
+  width: 600px;
+  height:300px;
+  margin: 150px 30px 20px 0;
+  text-align: right;
+  margin-left:auto;
+  font-size: 20px;
+}
+.paragraph{
+  display: block;
+  width:100%;
+  height: 40px;
+  margin-bottom: 2px;
+  z-index: 0;
+  margin-left: auto;
+}
+.sentense1{
+  display: block;
+  height: 25px;
+  background-color: #000000;
+  background: rgba(45,45,45, 0.5);
+  color: #FFFFFF;
+  padding: 9px 6px 0 0;
+  margin-left:auto;
+}
+
+.paragraph:nth-child(1){
+	width:455px;
+}
+.paragraph:nth-child(2){
+	width:415px;
+}
+.paragraph:nth-child(3){
+	width:310px;
+}
+.paragraph:nth-child(n+4){
+	width:290px;
+}
+.paragraph:last-child{
+	width:190px;
+}
+
+/* ここからmain */
+main{
+  margin: 30px 50px 10px 50px;
+}
+.works{
+  margin-bottom: 100px;
+}
+.experience{
+  margin-bottom: 100px;
+}
+.contact{
+  margin-bottom: 100px;
+}
+.main__logo{
+text-align: center;
+position: static;
+margin-bottom: 60px;
+}
+.main__logo_detail{
+width:90%;
+}
+.main__list{
+  width: 100%;
+  overflow: hidden;
+  margin-left: auto;
+
+}
+.work__list__ul{
+  display: block;
+  width: 100%;
+}
+.main__list__one{
+  box-sizing: border-box;
+  width:20%;
+  height: 200px;
+  border: 1px solid;
+  margin-left: 10%;
+  margin-bottom: 50px;
+  float: left;
+}
+
+.main__go{
+  width: 150px;
+  margin: auto;
+  text-align: center;
+}
+.main__go__detail{
+  margin:auto;
+  width:150px;
+  height: 60px;
+  display: table-cell;
+  vertical-align: middle;
+  border: 1px solid;
+  font-size: 30px;
+  background-color: #FFFFFF;
+}
+.contact__mail{
+width: 200px;
+margin: auto;
+}
+.contact__mail p{
+  width: 200px;
+  height: 60px;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px;
+  border: 1px solid;
+  font-size: 20px;
+  background-color: #FFFFFF;
+}
+.contact__facebook{
+  width: 180px;
+  height: 50px;
+  margin-top: 40px;
+  overflow: hidden;
+  margin: 40px auto 0 auto;
+}
+.facebook__title{
+  float: left;
+  font-size: 25px;
+  margin-top: 15px;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 25px;
+}
+.facebook__logo{
+  width: 50px;
+  margin-left: auto;
+}
+.image__content{
+  width: 50px;
+  display: block;
+  float: right;
+  margin-left: auto;
+}
+footer{
+position: relative;
+}
+
+footer img{
+  position: absolute;
+  bottom:0;
+}
+
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+  header {
+    top:-50px;
+  }
+  .intro__paragraph{
+    display: block;
+    width: 600px;
+    height:300px;
+    margin: 120px 30px 0 0;
+    text-align: right;
+    margin-left:auto;
+    font-size: 20px;
+  }
+}
